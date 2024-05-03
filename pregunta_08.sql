@@ -41,6 +41,7 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
-SELECT YEAR(c23) AS YEAR, AVG(c21) AS avg_c21
+SELECT YEAR(tbl2.c23) AS "YEAR", AVG(tbl2.c21) AS "avg(c21)"
 FROM tbl2
-GROUP BY YEAR(c23);
+GROUP BY YEAR(tbl2.c23)
+ORDER BY YEAR(tbl2.c23);

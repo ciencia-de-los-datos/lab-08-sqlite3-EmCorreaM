@@ -40,6 +40,6 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
-SELECT tbl1.K0, tbl1.c16
+SELECT K0, c16
 FROM tbl1
-WHERE LEFT(tbl1.c16, 1) = tbl1.K0;
+WHERE K0 = SUBSTRING(c16, 1, 1)

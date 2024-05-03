@@ -41,7 +41,5 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
-SELECT YEAR(tbl2.c23) AS "YEAR", AVG(tbl2.c21) AS "avg(c21)"
-FROM tbl2
-GROUP BY YEAR(tbl2.c23)
-ORDER BY YEAR(tbl2.c23);
+SELECT strftime('%Y', c23), AVG(c21)  as "avg(c21)" FROM tbl2 GROUP BY strftime("%Y", c23);
+

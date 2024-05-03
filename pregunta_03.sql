@@ -22,3 +22,7 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
+SELECT *
+FROM tbl1
+FETCH FIRST 5 ROWS ONLY
+ORDER BY c14;
